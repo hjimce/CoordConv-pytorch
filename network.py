@@ -32,7 +32,7 @@ class MyCoordConvNet(nn.Module):
             )
         
         self.model = nn.Sequential(
-            conv_bn(  1,  channel-2, 2), #为了做更好的比较
+            conv_bn(  1,  channel-2, 2), #为了做更好的比较，假设两个网络的参数差不多，所以减去2
             conv_dw( channel-2,  channel*2-2, 2),
             conv_dw(channel*2-2, channel*4-2, 2),
             conv_dw(channel*4-2, channel*8-2, 2),

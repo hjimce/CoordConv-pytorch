@@ -10,7 +10,7 @@ import network
 import torch.optim as optim
 import os
 coordconvnet=True
-network.draw_loss(["train_conv.txt","train.txt"])
+#network.draw_loss(["train_conv.txt","train.txt"])
 if coordconvnet:
         model = network.MyCoordConvNet().cuda()
 else:
